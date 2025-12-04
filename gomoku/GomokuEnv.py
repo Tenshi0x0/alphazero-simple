@@ -194,15 +194,16 @@ class GomokuEnv:
 
     def board_tostring(self, board):
         """
-        Convert the board to a string representation.
+        Convert the board to a bytes representation.
 
         Args:
             board (np.array): The current board state.
 
         Returns:
-            str: String representation of the board.
+            bytes: Byte representation of the board (used as MCTS dict keys).
         """
-        return board.tostring()
+        # tostring() was deprecated/removed; tobytes() provides the same bytes view
+        return board.tobytes()
 
     def get_result(self, board):
         """

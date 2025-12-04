@@ -10,6 +10,15 @@ AlphaZero is a state-of-the-art reinforcement learning algorithm developed by De
 
 This repository provides a general implementation of AlphaZero that can be applied to different board games, with the ability to train, evaluate, and test models.
 
+## Setup
+
+1. (Optional) Create and activate a virtual environment.
+2. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. If you want to render network graphs with `torchviz`, install the Graphviz system binary and ensure `dot` is on your `PATH` (the `graphviz` Python package is already listed above).
+
 ## Play with AI
 
 To play against the AI, simply run the following command:
